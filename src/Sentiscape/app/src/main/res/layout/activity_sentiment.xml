@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/sentimentRelativeLayout"
+    tools:context=".SentimentActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_marginTop="0dp"
+        android:background="#C93C54"
+        android:id="@+id/toolbar">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sentiment Analysis"
+                android:textSize="20sp"
+                android:id="@+id/toolbarText"
+                android:textStyle="bold"
+                android:textColor="@color/white">
+            </TextView>
+
+        </RelativeLayout>
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <EditText
+        android:id="@+id/sentimentInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Text Here..."
+        android:inputType="text"
+        android:singleLine="true"
+        android:layout_marginTop="50dp"
+        android:layout_below="@+id/toolbar"/>
+
+    <TextView
+        android:id="@+id/sentimentText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Detected Sentiment"
+        android:textSize="25sp"
+        android:layout_below="@+id/sentimentInput"
+        android:layout_marginTop="50dp"/>
+
+    <android.widget.Button
+        android:id="@+id/sentimentButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Test"
+        android:layout_marginTop="50dp"
+        android:layout_below="@+id/sentimentText"
+        android:background="@drawable/button_background"/>
+
+</RelativeLayout>

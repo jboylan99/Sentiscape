@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SettingsFragment">
+
+    <android.widget.Button
+        android:id="@+id/lightMode"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Light Mode"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/button_background"/>
+
+    <android.widget.Button
+        android:id="@+id/darkMode"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Dark Mode"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/lightMode"
+        android:background="@drawable/button_background"/>
+
+    <android.widget.Button
+        android:id="@+id/sentimentAnalysisButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/darkMode"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/button_background"
+        android:text="Sentiment Analysis" />
+
+    <android.widget.Button
+        android:id="@+id/deleteAccount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Delete Account"
+        android:layout_marginTop="50dp"
+        android:layout_below="@+id/sentimentAnalysisButton"
+        android:background="@drawable/button_background"/>
+
+</RelativeLayout>
